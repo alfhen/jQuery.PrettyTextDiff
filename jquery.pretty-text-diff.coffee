@@ -1,5 +1,5 @@
 ###
-@preserve jQuery.PrettyTextDiff 1.0.4
+@preserve jQuery.PrettyTextDiff 1.0.5
 See https://github.com/arnab/jQuery.PrettyTextDiff/
 ###
 
@@ -36,7 +36,7 @@ $.fn.extend
 
         diff_as_html = $.map(diffs, (diff) ->
           $.fn.prettyTextDiff.createHTML(diff))
-        $(settings.diffContainer, this).html(diff_as_html.join(''));
+        $(settings.diffContainer).html(diff_as_html.join(''));
 
         @
 
